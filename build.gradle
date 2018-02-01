@@ -1,0 +1,63 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.6.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: "org.sonarqube"
+apply plugin: "jacoco"
+apply plugin: 'maven'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url 'https://mygithub.rits2016.xyz/raw/cotos/CommonLibs/master/repository' }
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile 'junit:junit:4.12'
+    compile('jp.co.ricoh.cotos:common-libraries:0.0.1')
+    compileOnly('org.projectlombok:lombok:1.16.20')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompileOnly('org.projectlombok:lombok:1.16.20')
+    testRuntime('com.h2database:h2')
+}
+sonarqube {
+    properties {
+        property "sonar.host.url", "http://sonar.cotos.ricoh.co.jp/"
+        property "sonar.jacoco.reportPaths", "${project.buildDir}/jacoco/test.exec"
+    }
+}
+def repo = new File(rootDir, "repository")
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: "file://${repo.absolutePath}"
+            pom.version = '0.0.1'
+            pom.groupId = 'jp.co.ricoh.cotos'
+            pom.artifactId = 'isliving'
+        }
+    }
+}
+task sourcesJar(type: Jar, dependsOn:classes) {
+     classifier = 'sources'
+     from sourceSets.main.allSource
+}
+artifacts {
+     archives sourcesJar
+}
