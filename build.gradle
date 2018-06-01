@@ -24,12 +24,14 @@ apply plugin: 'maven'
 repositories {
     jcenter()
     mavenCentral()
+    maven { url 'https://mygithub.rits2016.xyz/raw/cotos/AuthLib/master/repository' }
     maven { url 'https://mygithub.rits2016.xyz/raw/cotos/CommonLibs/master/repository' }
 }
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile 'junit:junit:4.12'
+    compile('jp.co.ricoh.cotos:auth:0.0.3')
     compile('jp.co.ricoh.cotos:common-libraries:0.0.5')
     compileOnly('org.projectlombok:lombok:1.16.20')
     testCompile('org.springframework.boot:spring-boot-starter-test')
@@ -48,7 +50,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '0.0.2'
+            pom.version = '0.0.3'
             pom.groupId = 'jp.co.ricoh.cotos'
             pom.artifactId = 'isliving'
         }
