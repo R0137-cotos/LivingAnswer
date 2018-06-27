@@ -30,7 +30,7 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile 'junit:junit:4.12'
-    compile('jp.co.ricoh.cotos:common-libraries:0.0.5')
+    compile('jp.co.ricoh.cotos:common-libraries:0.0.1')
     compileOnly('org.projectlombok:lombok:1.16.20')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompileOnly('org.projectlombok:lombok:1.16.20')
