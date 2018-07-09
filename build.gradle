@@ -24,7 +24,7 @@ apply plugin: 'maven'
 repositories {
     jcenter()
     mavenCentral()
-    maven { url 'https://mygithub.rits2016.xyz/raw/cotos/CommonLibs/master/repository' }
+    maven { url 'https://mygithub.rits2016.xyz/raw/cotos/CommonLibs/feature/cotos-phase_2nd/repository' }
 }
 
 dependencies {
