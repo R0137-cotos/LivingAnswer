@@ -24,13 +24,13 @@ apply plugin: 'maven'
 repositories {
     jcenter()
     mavenCentral()
-    maven { url 'https://mygithub.rits2016.xyz/raw/cotos/CommonLibs/feature/cotos-phase_2nd/repository' }
+    maven { url 'https://mygithub.ritscm.xyz/raw/cotos/CommonLibs/feature/cotos-phase_2nd/repository' }
 }
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile 'junit:junit:4.12'
-    compile('jp.co.ricoh.cotos:common-libraries:0.0.10')
+    compile('jp.co.ricoh.cotos:common-libraries:0.0.1')
     compileOnly('org.projectlombok:lombok:1.16.20')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompileOnly('org.projectlombok:lombok:1.16.20')
@@ -48,7 +48,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '0.0.5'
+            pom.version = '0.0.1'
             pom.groupId = 'jp.co.ricoh.cotos'
             pom.artifactId = 'isliving'
         }
