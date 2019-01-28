@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.6.RELEASE'
+        springBootVersion = '1.5.9.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -24,7 +24,7 @@ apply plugin: 'maven'
 repositories {
     jcenter()
     mavenCentral()
-    maven { url 'https://mygithub.rits2016.xyz/raw/cotos/CommonLibs/master/repository' }
+    maven { url 'https://mygithub.ritscm.xyz/raw/cotos/LibsRepo/feature/cotos-phase_2nd/repository/CommonLibs' }
 }
 
 dependencies {
@@ -48,7 +48,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '0.0.2'
+            pom.version = '0.0.1'
             pom.groupId = 'jp.co.ricoh.cotos'
             pom.artifactId = 'isliving'
         }
