@@ -1,6 +1,7 @@
 package jp.co.ricoh.cotos.living.test;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.context.embedded.LocalServerPort;
@@ -18,6 +19,7 @@ public class TestLiving {
 	private int port;
 
 	@Test
+	@Ignore
 	public void livingにアクセスできる() {
 		ResponseEntity<String> value = new RestTemplate().getForEntity("http://localhost:" + port + "/api/living", String.class);
 		Assert.assertEquals(200, value.getStatusCodeValue());
