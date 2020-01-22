@@ -30,7 +30,7 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile 'junit:junit:4.12'
-    compile('jp.co.ricoh.cotos:common-libraries:0.0.296')
+    compile('jp.co.ricoh.cotos:common-libraries:0.0.301')
     compileOnly('org.projectlombok:lombok:1.16.20')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompileOnly('org.projectlombok:lombok:1.16.20')
@@ -48,7 +48,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '0.0.1'
+            pom.version = '0.0.2'
             pom.groupId = 'jp.co.ricoh.cotos'
             pom.artifactId = 'isliving'
         }

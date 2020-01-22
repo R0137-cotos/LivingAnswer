@@ -4,11 +4,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import jp.co.ricoh.cotos.commonlib.util.DBUtil;
+import jp.co.ricoh.cotos.commonlib.db.DBUtil;
 
 @RestController
 @RequestMapping("/api/living")
 public class LivingAnswerController {
+
 	private DBUtil dbUtil;
 
 	public LivingAnswerController(DBUtil dbUtil) {
