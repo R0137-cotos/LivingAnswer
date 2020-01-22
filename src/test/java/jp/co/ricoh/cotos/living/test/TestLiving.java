@@ -19,7 +19,7 @@ public class TestLiving {
 	private int port;
 
 	@Test
-	@Ignore
+	@Ignore //LivingAnswerを利用する各ドメイン側でテスト実装とする
 	public void livingにアクセスできる() {
 		ResponseEntity<String> value = new RestTemplate().getForEntity("http://localhost:" + port + "/api/living", String.class);
 		Assert.assertEquals(200, value.getStatusCodeValue());
