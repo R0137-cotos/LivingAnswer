@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.0.5 (23/01/2020)
+- [**closed**] 5216 最新のCommonlibsで動作させる [#18](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/18)
+
+---
+
 ## v1.0.0 (28/01/2019)
 - [**closed**] #1513 COTOS2nd用ブランチ作成 [#12](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/12)
 - [**closed**] CommonLibsVerリセット [#13](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/13)
