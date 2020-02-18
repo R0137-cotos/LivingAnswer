@@ -1,23 +1,17 @@
 # Changelog
 
-## v2.0.5 (23/01/2020)
-- [**closed**] 5216 最新のCommonlibsで動作させる [#18](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/18)
-
----
-
 ## v1.0.0 (28/01/2019)
-- [**closed**] #1513 COTOS2nd用ブランチ作成 [#12](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/12)
-- [**closed**] CommonLibsVerリセット [#13](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/13)
-- [**closed**] repositoryフォルダ削除 [#14](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/14)
-- [**closed**] 初回本番リリースを終えたためfeature/cotos-phase_2ndブランチをmasterへマージ [#15](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/15)
 - [**closed**] Revert "#1216 CommonLibsの参照バージョンを最新化" [#11](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/11)
-- [**closed**] #1329 認証認可用の設定クラスを追加 [#6](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/6)
-- [**closed**] #1329 インポート元と設定クラスが競合しないよう修正 [#7](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/7)
-- [**closed**] Revert "#1329 インポート元と設定クラスが競合しないよう修正" [#8](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/8)
-- [**closed**] Revert "#1329 認証認可用の設定クラスを追加" [#9](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/9)
-- [**closed**] #838 Oracle環境で動かない問題修正 [#3](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/3)
 - [**closed**] Revert "#1216 バージョン更新" [#10](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/10)
-- [**closed**] #1216 CommonLibsの参照バージョンを最新化 [#4](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/4)
+- [**closed**] Revert "#1329 認証認可用の設定クラスを追加" [#9](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/9)
+- [**closed**] Revert "#1329 インポート元と設定クラスが競合しないよう修正" [#8](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/8)
+- [**closed**] repositoryフォルダ削除 [#14](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/14)
+- [**closed**] CommonLibsVerリセット [#13](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/13)
+- [**closed**] #1513 COTOS2nd用ブランチ作成 [#12](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/12)
+- [**closed**] #1329 インポート元と設定クラスが競合しないよう修正 [#7](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/7)
+- [**closed**] #1329 認証認可用の設定クラスを追加 [#6](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/6)
 - [**closed**] #1216 バージョン更新 [#5](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/5)
-- [**closed**] #838 自動生成のファイル群（Gradle）追加 [#1](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/1)
+- [**closed**] #1216 CommonLibsの参照バージョンを最新化 [#4](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/4)
+- [**closed**] #838 Oracle環境で動かない問題修正 [#3](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/3)
 - [**closed**] #838 /api/livingにアクセスされた時、 livingと返答する。 [#2](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/2)
+- [**closed**] #838 自動生成のファイル群（Gradle）追加 [#1](https://mygithub.ritscm.xyz/cotos/LivingAnswer/pull/1)
